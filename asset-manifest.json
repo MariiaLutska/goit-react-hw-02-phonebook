@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/css/main.7acaea2f.css",
+    "main.js": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/js/main.07d3183d.js",
+    "index.html": "/MariiaLutska/goit-react-hw-02-phonebook1.git/index.html",
+    "main.7acaea2f.css.map": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
