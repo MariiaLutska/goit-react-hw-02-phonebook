@@ -3,6 +3,7 @@ import * as yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { nanoid } from 'nanoid';
 import { Box } from '../Box';
+import { Button } from './Button.styled';
 
 
 let formSchema = yup.object().shape({
@@ -101,9 +102,9 @@ export class ContactForm extends Component {
                 />
                 <ErrorMessage name="number" />
 
-          <button type="submit">
+          <Button type="submit">
             Add contact
-                </button>
+                </Button>
                 </Box>
               </Form>
           )}
