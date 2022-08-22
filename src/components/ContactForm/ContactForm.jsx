@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as yup from 'yup';
-import { Formik, Form } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { nanoid } from 'nanoid';
 import { Box } from '../Box';
 
@@ -63,10 +63,12 @@ export class ContactForm extends Component {
         >
           {props => (
             <Form onSubmit={this.handleSubmit}>
+              <Box display="flex"
+              flexDirection="column">
           <label htmlFor={props.inputNameId}>
             Name:
           </label>
-          <input
+          <Field
             onInput={this.handleInputChange}
             // value={this.state.name}
             type="text"
@@ -78,12 +80,13 @@ export class ContactForm extends Component {
                 onChange={props.handleChange}
              onBlur={props.handleBlur}
              value={props.values.name}
-          />
+                />
+                <ErrorMessage name="name" />
 
           <label htmlFor={props.inputTelId} >
             Number:
           </label>
-          <input
+          <Field
             onInput={this.handleInputChange}
             // value={this.state.number}
             type="tel"
@@ -95,12 +98,14 @@ export class ContactForm extends Component {
                 onChange={props.handleChange}
              onBlur={props.handleBlur}
              value={props.values.number}
-          />
+                />
+                <ErrorMessage name="number" />
 
           <button type="submit">
             Add contact
-          </button>
-        </Form>
+                </button>
+                </Box>
+              </Form>
           )}
      </Formik>
         

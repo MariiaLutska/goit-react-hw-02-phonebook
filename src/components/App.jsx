@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
+import { Section } from './Section/Section';
 import { Box } from './Box';
 
 export class App extends Component {
@@ -54,15 +55,18 @@ export class App extends Component {
        border="normal"
        background="lightyellow"
      width="50%">
-        <h1>Phonebook</h1>
-        <ContactForm onSubmit={this.onSubmit} />
-        
-        <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.onFilter} />
+        <Section title="Phonebook">
+          <ContactForm onSubmit={this.onSubmit} />
+          </Section>
+  
+        <Section title="Contacts">
+          <Filter value={filter} onChange={this.onFilter} />
+          
 
         <ContactList
           contacts={visibleContacts}
-          onDeleteClick={this.handleClickDeleteBtn} />
+            onDeleteClick={this.handleClickDeleteBtn} />
+          </Section>
       </Box>
     );
   }
