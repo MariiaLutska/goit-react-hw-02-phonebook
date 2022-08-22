@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/css/main.7acaea2f.css",
-    "main.js": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/js/main.33516aa9.js",
-    "index.html": "/MariiaLutska/goit-react-hw-02-phonebook1.git/index.html",
-    "main.7acaea2f.css.map": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/css/main.7acaea2f.css.map",
-    "main.33516aa9.js.map": "/MariiaLutska/goit-react-hw-02-phonebook1.git/static/js/main.33516aa9.js.map"
+    "main.css": "/MariiaLutska/goit-react-hw-02-phonebook.git/static/css/main.7acaea2f.css",
+    "main.js": "/MariiaLutska/goit-react-hw-02-phonebook.git/static/js/main.b7ffc92f.js",
+    "index.html": "/MariiaLutska/goit-react-hw-02-phonebook.git/index.html",
+    "main.7acaea2f.css.map": "/MariiaLutska/goit-react-hw-02-phonebook.git/static/css/main.7acaea2f.css.map",
+    "main.b7ffc92f.js.map": "/MariiaLutska/goit-react-hw-02-phonebook.git/static/js/main.b7ffc92f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.33516aa9.js"
+    "static/js/main.b7ffc92f.js"
   ]
 }
