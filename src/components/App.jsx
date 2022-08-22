@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 // import { nanoid } from 'nanoid';
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
-import {Filter} from './Filter/Filter';
-
+import { Filter } from './Filter/Filter';
+import { Box } from './Box';
 
 export class App extends Component {
   state = {
@@ -46,7 +46,14 @@ export class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div>
+      <Box
+      display="flex"
+       flexDirection="column"
+       justifyContent="center"
+       alignItems="center"
+       border="normal"
+       background="lightyellow"
+     width="50%">
         <h1>Phonebook</h1>
         <ContactForm onSubmit={this.onSubmit} />
         
@@ -56,7 +63,7 @@ export class App extends Component {
         <ContactList
           contacts={visibleContacts}
           onDeleteClick={this.handleClickDeleteBtn} />
-      </div>
+      </Box>
     );
   }
 }
